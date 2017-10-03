@@ -1,0 +1,42 @@
+{
+  "name": "amapp",
+  "version": "1.0.0",
+  "description": "backend de porte a porte",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "H4E",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.18.2",
+    "connect-ensure-login": "^0.1.1",
+    "express": "^4.15.5",
+    "express-session": "^1.15.1",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.11.13",
+    "morgan": "^1.9.0",
+    "passport": "^0.3.2",
+    "passport-http-bearer": "^1.0.1",
+    "passport-oauth2": "^1.4.0",
+    "redis": "^2.7.1",
+    "request": "^2.81.0",
+    "winston": "^2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brainstorm67/AmAPPrestAPI.git"
+  },
+  "keywords": [
+    "rest"
+  ],
+  "bugs": {
+    "url": "https://github.com/Brainstorm67/AmAPPrestAPI/issues"
+  },
+  "homepage": "https://github.com/Brainstorm67/AmAPPrestAPI#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

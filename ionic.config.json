@@ -2,5 +2,7 @@
   "name": "AmAPP",
   "app_id": "cb92553e",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
