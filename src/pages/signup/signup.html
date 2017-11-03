@@ -12,23 +12,34 @@
     <ion-list>
 
       <ion-item>
-        <ion-label fixed>{{ 'NAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+        <ion-label fixed>{{ 'LASTNAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.lastname" name="lastname"></ion-input>
       </ion-item>
+
+      <ion-item>
+          <ion-label fixed>{{ 'FIRSTNAME' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="account.firstname" name="firstname"></ion-input>
+        </ion-item>
 
       <ion-item>
         <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
 
-      <!--
-      Want to add a Username? Here you go:
+      <ion-item>
+          <ion-label fixed>{{ 'ADDRESS' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="account.address" name="address"></ion-input>
+      </ion-item>
 
       <ion-item>
-        <ion-label floating>Username</ion-label>
-        <ion-input type="text" [(ngModel)]="account.username" name="username"></ion-input>
+          <ion-label fixed>{{ 'BIRTHDATE' | translate }}</ion-label>
+          <ion-input type="date" [(ngModel)]="account.birthdate" name="date" data-date="" data-date-format="YYYY/MM/dd" ></ion-input>
       </ion-item>
-      -->
+
+      <ion-item>
+          <ion-label fixed>{{ 'CAR' | translate }}</ion-label>
+          <ion-toggle type="text" [(ngModel)]="account.car" name="car"></ion-toggle>
+      </ion-item>
 
       <ion-item>
         <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>

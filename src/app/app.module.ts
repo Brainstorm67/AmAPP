@@ -11,14 +11,14 @@ import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { ListMasterPage } from '../pages/list-master/list-master';
-import { LoginPage } from '../pages/login/login';
+// import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
 import { SearchPage } from '../pages/search/search';
 import { SettingsPage } from '../pages/settings/settings';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
-import { TutorialPage } from '../pages/tutorial/tutorial';
+//import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
 
 import { Api } from '../providers/api';
@@ -63,14 +63,14 @@ export function provideSettings(storage: Storage) {
     ItemCreatePage,
     ItemDetailPage,
     ListMasterPage,
-    LoginPage,
+    //LoginPage,
     MapPage,
     MenuPage,
     SearchPage,
     SettingsPage,
     SignupPage,
     TabsPage,
-    TutorialPage,
+    // TutorialPage,
     WelcomePage
   ],
   imports: [
@@ -94,14 +94,14 @@ export function provideSettings(storage: Storage) {
     ItemCreatePage,
     ItemDetailPage,
     ListMasterPage,
-    LoginPage,
+    //LoginPage,
     MapPage,
     MenuPage,
     SearchPage,
     SettingsPage,
     SignupPage,
     TabsPage,
-    TutorialPage,
+    // TutorialPage,
     WelcomePage
   ],
   providers: [

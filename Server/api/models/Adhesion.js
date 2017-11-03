@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const ObjectId = Schema.ObjectId;
 
-const Adherent = new Schema({
+const Adhesion = new Schema({
   User: ObjectId,
-  Adhesion: [ObjectId]
+  
   //location: {
    //   type: [Number],
     //  index: '2d'},
 });
 
-module.exports = mongoose.model('Adherent', Adherent);
+module.exports = mongoose.model('Adhesion', Adhesion);

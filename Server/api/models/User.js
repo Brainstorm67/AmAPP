@@ -8,9 +8,9 @@ const User = new Schema({
   birthdate: Date,
   email: String,
   adresse: String,
-  login: String,
   password: String,
-  voiture: boolean
+  voiture: boolean,
+  Adhesion: [ObjectId]
   //location: {
    //   type: [Number],
     //  index: '2d'},

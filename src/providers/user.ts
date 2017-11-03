@@ -41,12 +41,9 @@ export class User {
       .map(res => res.json())
       .subscribe(res => {
         // If the API returned a successful response, mark the user as logged in
-        if (res.status == 'success') {
           this._loggedIn(res);
-        } else {
-        }
       }, err => {
-        console.error('ERROR', err);
+        console.log( err);
       });
 
     return seq;
@@ -57,17 +54,27 @@ export class User {
    * the user entered on the form.
    */
   signup(accountInfo: any) {
-    let seq = this.api.post('signup', accountInfo).share();
+    let seq = this.api.post('users', accountInfo).share();
 
     seq
       .map(res => res.json())
       .subscribe(res => {
-        // If the API returned a successful response, mark the user as logged in
-        if (res.status == 'success') {
-          this._loggedIn(res);
-        }
       }, err => {
-        console.error('ERROR', err);
+        console.log(err);
+        // console.error('ERROR', err);
+      });
+
+    return seq;
+  }
+
+  forgottenPwd(mail: String) {
+    let seq = this.api.get("forgotten/"+mail).share();
+
+    seq
+      .map(res => res.json())
+      .subscribe(res => {
+      }, err => {
+        console.log(err);
       });
 
     return seq;
@@ -77,7 +84,16 @@ export class User {
    * Log the user out, which forgets the session
    */
   logout() {
-    this._user = null;
+    let seq = this.api.get("logout", this._user).share();
+    seq
+    .map(res => res.json())
+    .subscribe(res => {
+      this._user = null;
+    }, err => {
+      this._user = null;
+      console.log(err);
+    });
+    
   }
 
   /**

@@ -1,9 +1,14 @@
 {
-  "NAME": "Nom",
+  "LASTNAME": "Nom",
+  "FIRSTNAME": "Prénom",
   "PASSWORD": "Mot de passe",
   "EMAIL": "E-mail",
+  "CAR": "Ma voiture est disponible pour du covoiturage",
+  "ADDRESS": "Adresse",
   "LOGIN": "Connexion",
   "SIGNUP": "Inscription",
+  "BIRTHDATE": "Date de naissance",
+  "FORGOTTEN": "Mot de passe oublié",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Recherche",
@@ -20,6 +25,9 @@
   "TUTORIAL_SLIDE3_TITLE": "Pour commencer",
   "TUTORIAL_SLIDE3_DESCRIPTION": "Si vous avez besoin d’aide, consultez le README du Super Starter pour un tutoriel complet.",
 
+  
+  "WELCOME_INTRO" : "Bienvenue à LamAPP",
+
   "SETTINGS_TITLE": "Paramètres",
   "SETTINGS_OPTION1": "Option 1",
   "SETTINGS_OPTION2": "Option 2",
@@ -35,8 +43,15 @@
   "LOGIN_BUTTON": "Connexion",
   "SIGNUP_TITLE": "Inscription",
   "SIGNUP_ERROR": "Inscription impossible. Veuillez vérifier les informations de votre compte et réessayer.",
+  "SIGNUP_SUCCESS": "Inscription réussie. Vous devez activer votre compte grâce au lien que vous aller recevoir par mail avant de vous connecter.",
   "SIGNUP_BUTTON": "Inscription",
-
+  "MAIL_ERROR": "Veuillez rentrer un email valide",
+  "MAIL_UNKNOWN": "Adresse Email inconnue",
+  "WRONG_PWD": "Mot de passe incorrect",
+  "SERVER_ERROR": "Erreur serveur",
+  "UNVERIFIED_MAIL":"Veuillez activer votre compte d'abord",
+  "RESET_MAIL_SENT":"Vous allez recevoir un email de réinitialisation",
+  
   "LIST_MASTER_TITLE": "Items",
 
   "ITEM_CREATE_TITLE": "Nouvel item",

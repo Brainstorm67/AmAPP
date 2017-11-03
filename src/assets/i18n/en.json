@@ -1,12 +1,17 @@
 {
   "BACK_BUTTON_TEXT" : "Back",
 
-  "NAME": "Name",
+  "LASTNAME": "Lastname",
+  "FIRSTNAME": "Firstname",
+  "ADDRESS": "Address",
   "EMAIL": "Email",
+  "BIRTHDATE": "Birthdate",
   "USERNAME": "Username",
   "PASSWORD": "Password",
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
+  "CAR":"Do you wish to share a car ?",
+  "FORGOTTEN": "I forgot my password",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Search",
@@ -28,7 +33,7 @@
 
   "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
 
-  "WELCOME_INTRO" : "The starting point for your next great Ionic app",
+  "WELCOME_INTRO" : "Welcome to LamAPP",
 
   "SETTINGS_TITLE": "Settings",
   "SETTINGS_OPTION1": "Option 1",
@@ -47,7 +52,14 @@
   "LOGIN_BUTTON": "Sign in",
   "SIGNUP_TITLE": "Sign up",
   "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_SUCCESS": "Sign up successful. You must activate your account with the link you are going to receive at your email address in order to log in.",
   "SIGNUP_BUTTON": "Sign up",
+  "MAIL_ERROR": "Please, enter a valid mail address",
+  "MAIL_UNKNOWN": "Unknown email address",
+  "WRONG_PWD": "Wrong password",
+  "SERVER_ERROR": "Server side ERROR",
+  "UNVERIFIED_MAIL":"You need to activate your account first",
+  "RESET_MAIL_SENT":"You are going to receive a reset mail shortly",
 
   "LIST_MASTER_TITLE": "Items",
 

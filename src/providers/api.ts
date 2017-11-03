@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, RequestOptions, URLSearchParams } from '@angular/http';
+import { Http, Headers, RequestOptions, URLSearchParams } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 /**
@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
  */
 @Injectable()
 export class Api {
-  url: string = 'https://example.com/api/v1';
+  url: string = 'http://192.168.1.27:8000';
 
   constructor(public http: Http) {
   }
@@ -32,18 +32,43 @@ export class Api {
   }
 
   post(endpoint: string, body: any, options?: RequestOptions) {
-    return this.http.post(this.url + '/' + endpoint, body, options);
+    if (!options) {
+      let headers = new Headers(
+        {
+          'Content-Type' : 'application/json'
+        });
+      options = new RequestOptions({ headers: headers });
+    }
+      
+    let data = JSON.stringify(body);
+    
+    return this.http.post(this.url + '/' + endpoint, data, options);
   }
 
   put(endpoint: string, body: any, options?: RequestOptions) {
-    return this.http.put(this.url + '/' + endpoint, body, options);
+    if (!options) {
+      let headers = new Headers(
+        {
+          'Content-Type' : 'application/json'
+        });
+      options = new RequestOptions({ headers: headers });
+    }
+      
+    let data = JSON.stringify(body);
+    return this.http.put(this.url + '/' + endpoint, data, options);
   }
 
   delete(endpoint: string, options?: RequestOptions) {
+    if (!options) {
+      options = new RequestOptions();
+    }
     return this.http.delete(this.url + '/' + endpoint, options);
   }
 
   patch(endpoint: string, body: any, options?: RequestOptions) {
+    if (!options) {
+      options = new RequestOptions();
+    }
     return this.http.put(this.url + '/' + endpoint, body, options);
   }
 }
